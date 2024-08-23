@@ -29,6 +29,14 @@ Also, VSCode has a useful LUA Add-on called Umbrella.
 Install LUA in VSCode and then press `CTRL+SHIFT+P` and type in `LUA: Open Addon Manager` and search for Umbrella to add to a project folder.
 
 ---
+# Resources
+
+Useful links
+
+https://github.com/FWolfe/Zomboid-Modding-Guide
+https://theindiestone.com/forums/index.php?/topic/37647-the-one-stop-shop-for-3d-modeling-from-blender-to-zomboid/
+https://github.com/demiurgeQuantified/PZModdingGuides/blob/main/guides/SandboxOptions.md
+
 # Examples
 
 Timer implementation
