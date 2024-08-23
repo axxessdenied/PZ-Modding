@@ -61,3 +61,20 @@ local function example()
   -- do stuff
 end
 ```
+
+# Recipes
+How to add custom event when a creating an item with a recipe
+
+```lua
+recipe Example Recipe {
+  Ingredient,
+
+  Result: Item,
+  Time: 50.0,
+  OnCreate: Module.onCreateFunc,
+}
+
+function Module.onCreateFunc(items, result, player)
+  -- do stuff
+end
+```
