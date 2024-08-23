@@ -33,9 +33,9 @@ Install LUA in VSCode and then press `CTRL+SHIFT+P` and type in `LUA: Open Addon
 
 Useful links
 
-[Zomboid Modding Guide](https://github.com/FWolfe/Zomboid-Modding-Guide)
-[Blender to Zomboid](https://theindiestone.com/forums/index.php?/topic/37647-the-one-stop-shop-for-3d-modeling-from-blender-to-zomboid/)
-[Sandbox Options](https://github.com/demiurgeQuantified/PZModdingGuides/blob/main/guides/SandboxOptions.md)
+- [Zomboid Modding Guide](https://github.com/FWolfe/Zomboid-Modding-Guide)
+- [Blender to Zomboid](https://theindiestone.com/forums/index.php?/topic/37647-the-one-stop-shop-for-3d-modeling-from-blender-to-zomboid/)
+- [Sandbox Options](https://github.com/demiurgeQuantified/PZModdingGuides/blob/main/guides/SandboxOptions.md)
 
 # Examples
 
