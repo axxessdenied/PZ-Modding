@@ -63,8 +63,9 @@ end
 ```
 
 # Recipes
-How to add custom event when a creating an item with a recipe
 
+How to add custom event when a creating an item with a recipe
+---
 ```lua
 recipe Example Recipe {
   Ingredient,
@@ -83,6 +84,7 @@ end
 ### Distributions
 
 Example Function
+---
 ```lua
 local function addDistribution(data, locations)   
     for item, chance in pairs(data)
