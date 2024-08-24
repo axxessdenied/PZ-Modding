@@ -78,3 +78,82 @@ function Module.onCreateFunc(items, result, player)
   -- do stuff
 end
 ```
+# Items
+
+### Distributions
+
+Example Function
+```lua
+local function addDistribution(data, locations)   
+    for item, chance in pairs(data)
+	do
+		for i, location in ipairs(locations)
+		do
+			if ProceduralDistributions.list[location] and ProceduralDistributions.list[location].items
+			then
+				table.insert(ProceduralDistributions.list[location].items, item);
+				table.insert(ProceduralDistributions.list[location].items, chance);
+			end
+		end
+	end
+end
+
+local sBVars = SandboxVars.SomeModule
+
+local flaskFullRarity = sBVars.LootSpawnChance * 0.05
+local flaskEmptyRarity = sBVars.LootSpawnChance * 0.1
+
+--example of adding an item
+if sBVars.WorldSpawnFlasks == true
+then
+    addDistribution(
+    {
+        ["TheAlcoholic.FlaskEmpty"]     =       flaskEmptyRarity,
+        ["TheAlcoholic.FlaskFull"]      =       flaskFullRarity,
+    },{
+        "BathroomCabinet",
+        "BathroomCounter",
+        "BedroomDresser",
+        "BedroomSideTable",
+        "ClosetShelfGeneric",
+        "DeskGeneric",
+        "DresserGeneric",
+        "FilingCabinetGeneric",
+        "FridgeOffice",
+        "GarageTools",
+        "JunkHoard",
+        "KitchenRandom",
+        "KitchenBottles",
+        "LibraryCounter",
+        "LivingRoomShelf",
+        "LivingRoomSideTable",
+        "Locker",
+        "LockerArmyBedroom",
+        "LockerClassy",
+        "MechanicShelfMisc",
+        "OfficeCounter",
+        "OfficeDesk",
+        "OfficeDeskHome",
+        "OfficeDrawers",
+        "OtherGeneric",
+        "PlankStashMisc",
+        "PoliceDesk",
+        "RandomFiller",
+        "SafehouseMedical",
+        "ShelfGeneric",
+        "WardrobeMan",
+        "WardrobeManClassy",
+        "WardrobeWoman",
+        "WardrobeWomanClassy",
+    }
+)
+else
+    addDistribution(
+    {
+        ["TheAlcoholic.FlaskEmpty"]     =       flaskEmptyRarity,
+        ["TheAlcoholic.FlaskFull"]      =       flaskFullRarity,
+    },
+    {}
+)
+end
+```
