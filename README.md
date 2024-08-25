@@ -71,6 +71,8 @@ local function func(ticks)
 
   --do stuff
 end
+
+Events.OnTick.Add(func)
 ```
 
 # Recipes
