@@ -66,13 +66,11 @@ OnTick example
 ---
 ```lua
 -- takes into account game multiplier to run with the game speed if desired
-local function func(ticks)
+Events.OnTick.Add(function(ticks)
   if math.fmod(ticks, math.floor( nTicks / getGameTime():getTrueMultipler() )) ~= 0 then return end
 
   --do stuff
-end
-
-Events.OnTick.Add(func)
+end)
 ```
 
 # Recipes
