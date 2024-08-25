@@ -62,6 +62,17 @@ local function example()
 end
 ```
 
+OnTick example
+---
+```lua
+-- takes into account game multiplier to run with the game speed if desired
+local function func(ticks)
+  if math.fmod(ticks, math.floor( nTicks / getGameTime():getTrueMultipler() )) ~= 0 then return end
+
+  --do stuff
+end
+```
+
 # Recipes
 
 How to add custom event when a creating an item with a recipe
